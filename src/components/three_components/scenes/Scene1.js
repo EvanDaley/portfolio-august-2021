@@ -1,6 +1,7 @@
 import { OrbitControls, Stats, Stage, Loader, PerspectiveCamera, Environment, useTexture } from '@react-three/drei';
 import React, { useState, useEffect, useRef, Suspense } from 'react';
 import { useControls } from "leva"
+import Box from "./../objects/Box"
 
 export default function Scene({ sceneIndex }) {
   return (
@@ -10,7 +11,7 @@ export default function Scene({ sceneIndex }) {
       {/* <Stage adjustCamera={false} contactShadow={true} shadows={true}> */}
 
         {/* <Geo position={[0,0,0]}/> */}
-        {/* <Box position={[0,0,0]}/> */}
+        <Box position={[0,0,0]}/>
         {/* <Box position={[0,-10,0]}/> */}
 
         <Suspense fallback={null}>

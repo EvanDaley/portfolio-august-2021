@@ -5,9 +5,47 @@
 function Layout() {
   return (
     <>
-      <header className="main-header">
+      <div className="html-content-container">
+        <div className="header">
+          <nav className="navbar">
 
-      </header>
+            <div className="logo">
+              <a href="https://evandaley.github.io/portfolio-august-2021/">
+                E {/* <svg></svg> */}
+              </a>
+            </div>
+
+            <div className="nav-menu">
+              <ol className="menu-ordered-list">
+                <li>
+                  About
+                </li>
+                <li>
+                  Experience
+                </li>
+                <li>
+                  Frontend
+                </li>
+                {/* <li>
+                  Backend
+                </li>
+                <li>
+                  Data
+                </li>
+                <li>
+                  Architecture
+                </li>
+                <li>
+                  Featured Projects
+                </li> */}
+                <li>
+                  Get in Touch
+                </li>
+              </ol>
+            </div>
+          </nav>
+        </div>
+      </div>
     </>
   )
 }
@@ -15,7 +53,7 @@ function Layout() {
 export default function HTMLContent() {
   return (
     <>
-      <Layout/>
+      <Layout />
     </>
   )
 }

@@ -22,17 +22,12 @@ export default function ThreeCanvas() {
   return (
     <>
       <Canvas colorManagement={true} invalidateFrameloop pixelRatio={[1, 2]}>
-
         <Suspense fallback={null}>
           {React.createElement(scenes[sceneIndex])}
         </Suspense>
 
         {/* <Stats /> */}
-
-
-
       </Canvas>
-
       <Loader />
     </>
   );
