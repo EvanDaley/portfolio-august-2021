@@ -3,6 +3,8 @@
 // so don't try to do anything fancy with Three.js.
 
 function Layout() {
+  const logoPath = window.location.href + '/images/logo.png'
+
   return (
     <>
       <div className="html-content-container">
@@ -11,7 +13,7 @@ function Layout() {
 
             <div className="logo">
               <a href="https://evandaley.github.io/portfolio-august-2021/">
-                E {/* <svg></svg> */}
+                <img src={logoPath} className="logo" />
               </a>
             </div>
 
@@ -26,18 +28,12 @@ function Layout() {
                 <li>
                   Frontend
                 </li>
-                {/* <li>
+                <li>
                   Backend
                 </li>
                 <li>
-                  Data
-                </li>
-                <li>
-                  Architecture
-                </li>
-                <li>
                   Featured Projects
-                </li> */}
+                </li>
                 <li>
                   Get in Touch
                 </li>
@@ -45,6 +41,29 @@ function Layout() {
             </div>
           </nav>
         </div>
+
+        <div id="content">
+          <main className="content-container">
+            <section className="section-1">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+
+            <section className="section-2">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+
+            <section className="section-3">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+          </main>
+        </div>
+
       </div>
     </>
   )
