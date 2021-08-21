@@ -49,11 +49,12 @@ function Layout() {
 
         <div className="no-bg">
           <div className="section-1">
+            {/* <h3>Full Stack Software Developer</h3> */}
             <h2>Evan Daley</h2>
           </div>
         </div>
 
-        {/* <div id="content">
+        <div id="content">
           <main className="content-container">
             <section className="section-1">
               <div>
@@ -72,8 +73,20 @@ function Layout() {
                 <p>test</p>
               </div>
             </section>
+
+            <section className="section-4">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+
+            <section className="section-5">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
           </main>
-        </div> */}
+        </div>
 
       </div>
     </>

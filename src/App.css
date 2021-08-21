@@ -136,6 +136,8 @@ ol li:before {
 
 section {
   height: 100vh;
+  padding: 0px;
+  margin: 0px;
 }
 
 .no-bg {
@@ -155,15 +157,15 @@ section {
 }
 
 .section-3 {
-  background-color: #3AAFA9;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .section-4 {
-  background-color: #17242A;
+  background-color: #3AAFA9;
 }
 
 .section-5 {
-  background-color: #3AAFA9;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .section-6 {
@@ -177,6 +179,33 @@ section {
 /*  */
 
 .section-1>h2 {
+  background-color: rgba(23, 36, 42, .8);
+  color: white;
+  font-size: 8vw;
+  text-transform: uppercase;
+  /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto;
+  /* Center the text container */
+  padding: 10px;
+  width: 60%;
+  text-align: center;
+  /* Center text */
+  position: absolute;
+  /* Position text */
+  top: 50%;
+  /* Position text in the middle */
+  left: 50%;
+  /* Position text in the middle */
+  transform: translate(-50%, -50%);
+  /* Position text in the middle */
+  mix-blend-mode: screen;
+  /* This makes the cutout text possible */
+  line-height: 8vw;
+  backdrop-filter: blur(10px);
+}
+
+.section-1>h3 {
   background-color: rgba(23, 36, 42, .8);
   color: white;
   font-size: 8vw;
