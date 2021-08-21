@@ -2,18 +2,46 @@
 // Throw all the raw HTML content here. This is all rendered outside the context of the canvas,
 // so don't try to do anything fancy with Three.js.
 
+import VideoSandbox from "./VideoSandbox"
+
 function Layout() {
   const logoPath = window.location.href + '/images/logo.png'
 
   return (
     <>
       <div className="html-content-container">
-        <div className="header">
+        
+
+        <VideoSandbox/>
+
+        {/* <div id="content">
+          <main className="content-container">
+            <section className="section-1">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+
+            <section className="section-2">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+
+            <section className="section-3">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+          </main>
+        </div> */}
+
+<div className="header">
           <nav className="navbar">
 
             <div className="logo">
               <a href="https://evandaley.github.io/portfolio-august-2021/">
-                <img src={logoPath} className="logo" />
+                <img src={logoPath} className="logo" alt="Logo" />
               </a>
             </div>
 
@@ -40,28 +68,6 @@ function Layout() {
               </ol>
             </div>
           </nav>
-        </div>
-
-        <div id="content">
-          <main className="content-container">
-            <section className="section-1">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-
-            <section className="section-2">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-
-            <section className="section-3">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-          </main>
         </div>
 
       </div>
