@@ -13,8 +13,6 @@ html, body, #root {
   z-index: 1;
   flex-direction: column;
   line-height: 26px;
-  /* background-color: rgba(10, 25, 47, .85); */
-  background-color: #17242A;
   color: rgb(136, 146, 176);
   width: 100%;
 }
@@ -30,7 +28,8 @@ html, body, #root {
   align-items: center;
   justify-content: space-between;
   backdrop-filter: blur(10px);
-  background-color: rgba(23, 36, 42, .7);
+  /* background-color: rgba(23, 36, 42, .7); */
+  background-color: rgba(10, 25, 47, .85);
   top: 0px;
   z-index: 12;
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
@@ -99,13 +98,57 @@ ol li:before {
   padding-right: 0px;
 }
 
+/*  */
+
+/* Video Sandbox */
+
+/*  */
+
+.cover-screen {
+  z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .cover-screen {
+    width: auto;
+    min-height: 100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .cover-screen {
+    height: 100%;
+  }
+}
+
+/*  */
+
+/* Sections */
+
+/*  */
+
 section {
   height: 100vh;
 }
 
-/* .section-1 {
-  background-color: #2B7A77;
-} */
+.no-bg {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.no-bg>* {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.section-1>p {
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .section-2 {
   background-color: #17242A;
@@ -129,30 +172,33 @@ section {
 
 /*  */
 
-/* Video Sandbox */
+/* Section 1 Text */
 
 /*  */
 
-#myVideo {
-  /* z-index: -1; */
-  position: fixed;
-  width: 100%;
-  height: auto;
-  top: 0;
+.section-1>h2 {
+  background-color: rgba(23, 36, 42, .8);
+  color: white;
+  font-size: 8vw;
+  text-transform: uppercase;
+  /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto;
+  /* Center the text container */
+  padding: 10px;
+  width: 60%;
+  text-align: center;
+  /* Center text */
+  position: absolute;
+  /* Position text */
+  top: 50%;
+  /* Position text in the middle */
   left: 50%;
-  transform: translateX(-50%);
-  overflow: hidden;
-}
-
-@media (max-aspect-ratio: 16/9) {
-  #myVideo {
-    width: auto;
-    min-height: 100%;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  #myVideo {
-    height: 100%;
-  }
+  /* Position text in the middle */
+  transform: translate(-50%, -50%);
+  /* Position text in the middle */
+  mix-blend-mode: screen;
+  /* This makes the cutout text possible */
+  line-height: 8vw;
+  backdrop-filter: blur(10px);
 }

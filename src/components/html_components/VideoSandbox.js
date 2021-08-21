@@ -11,9 +11,11 @@ export default function Navigation() {
 
   return (
     <>
-      <video autoPlay muted loop id="myVideo" key={videoPaths[videoIndex]}>
-        <source src={videoPaths[videoIndex]} type="video/mp4" />
-      </video>
+      <div>
+        <video autoPlay muted loop className="cover-screen" key={videoPaths[videoIndex]}>
+          <source src={videoPaths[videoIndex]} type="video/mp4" />
+        </video>
+      </div>
     </>
   )
 }

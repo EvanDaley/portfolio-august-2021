@@ -10,33 +10,10 @@ function Layout() {
   return (
     <>
       <div className="html-content-container">
-        
 
-        <VideoSandbox/>
+        <VideoSandbox />
 
-        {/* <div id="content">
-          <main className="content-container">
-            <section className="section-1">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-
-            <section className="section-2">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-
-            <section className="section-3">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-          </main>
-        </div> */}
-
-<div className="header">
+        <div className="header">
           <nav className="navbar">
 
             <div className="logo">
@@ -69,6 +46,34 @@ function Layout() {
             </div>
           </nav>
         </div>
+
+        <div className="no-bg">
+          <div className="section-1">
+            <h2>Evan Daley</h2>
+          </div>
+        </div>
+
+        {/* <div id="content">
+          <main className="content-container">
+            <section className="section-1">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+
+            <section className="section-2">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+
+            <section className="section-3">
+              <div>
+                <p>test</p>
+              </div>
+            </section>
+          </main>
+        </div> */}
 
       </div>
     </>
