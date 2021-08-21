@@ -64,11 +64,15 @@ html, body, #root {
 }
 
 .menu-ordered-list {
-  display: flex
+  display: flex;
+  align-items: center;
+
 }
 
 .menu-ordered-list>li {
   box-sizing: border-box;
+  font-size: 13px;
   color: rgb(204, 214, 246);
-  min-width: 150px;
+  
+  /* min-width: 150px; */
 }
