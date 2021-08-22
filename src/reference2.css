@@ -98,6 +98,40 @@ ol li:before {
   padding-right: 0px;
 }
 
+.highlight {
+  color: #3AAFA9;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+.section-label {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: rgb(204, 214, 246);
+  margin: 10px 0px 40px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.section-label::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 100%;
+  max-width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #2B7A77;
+  display: inline-block;
+}
+
+.inner {
+  font-size: 20px;
+}
+
 /*  */
 
 /* Video Sandbox */
@@ -135,7 +169,7 @@ ol li:before {
 /*  */
 
 section {
-  height: 95vh;
+  height: 90vh;
   padding: 0px;
   margin: 0px;
 }
@@ -152,12 +186,47 @@ section {
   background-color: rgba(0, 0, 0, 0);
 }
 
+/* Section 2, about me, avatar */
 .section-2 {
   background-color: #17242A;
+  margin: 0px auto;
+  display: flex;
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: auto;
+  min-height: 90vh;
 }
 
+.about-me {
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 1000px;
+}
+
+@media (max-width:650px) {
+  .avatar {
+    margin: 50px auto 0px;
+    min-width: 70%;
+  }
+
+  .about-me {
+    width: 100%;
+  }
+
+  .section-2 {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
+/* Section 3 */
 .section-3 {
   background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
 }
 
 .section-4 {
@@ -177,6 +246,7 @@ section {
 /* Section 1 Text */
 
 /*  */
+
 .centered-content {
   /* background: rgba(0, 0, 0, 0); */
   /* Center the text container */
@@ -185,7 +255,7 @@ section {
   /* Center text */
   position: absolute;
   /* Position text */
-  top: 50vh;
+  top: 45vh;
   /* Position text in the middle */
   left: 50vw;
   /* Position text in the middle */
@@ -207,18 +277,17 @@ section {
   text-align: center;
   /* This makes the cutout text possible */
   line-height: 8vw;
-  backdrop-filter: blur(10px);
-
+  backdrop-filter: blur(30px);
 }
 
 .section-1 h3 {
-  background-color: rgba(58, 175, 169, .7);
+  background-color: rgba(58, 175, 169, .5);
   color: white;
   font-size: 2vw;
   text-transform: uppercase;
   font-weight: normal;
   margin: 0 auto;
-  margin-right: 1vw;
+  margin-right: 1.5vw;
   margin-top: -1vw;
   /* Center the text container */
   padding: 10px;
@@ -226,10 +295,34 @@ section {
   text-align: center;
   /* This makes the cutout text possible */
   line-height: 2.2vw;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(100px);
 }
 
-.test {
+@media (max-width:650px) {
+  .section-1 h3 {
+    line-height: .2vw;
+  }
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: rgb(204, 214, 246);
+}
+
+a:hover {
+  color: rgb(204, 214, 246);
+}
+
+
+
+
+
+.color-reference {
   color: #17242A;
   color: #2B7A77;
   color: #3AAFA9;
@@ -237,5 +330,8 @@ section {
   color: #FFFFFF;
 }
 
-
-
+@media (max-width:650px) {
+  .media-query-reference {
+    display: none !important;
+  }
+}

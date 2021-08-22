@@ -98,6 +98,39 @@ ol li:before {
   padding-right: 0px;
 }
 
+.highlight {
+  color: #3AAFA9;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.section-label {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: rgb(204, 214, 246);
+  margin: 10px 0px 40px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.section-label::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 100%;
+  max-width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #2B7A77;
+  display: inline-block;
+}
+
+.font-twenty {
+  font-size: 20px;
+}
+
 /*  */
 
 /* Video Sandbox */
@@ -152,25 +185,75 @@ section {
   background-color: rgba(0, 0, 0, 0);
 }
 
+/* Section 2, about me, avatar */
+
 .section-2 {
   background-color: #17242A;
+  margin: 0px auto;
+  display: flex;
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: auto;
+  min-height: 50vh;
 }
 
+.about-me {
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 1000px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  /* margin: 50px auto 0px; */
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+@media (max-width:1200px) {
+  .section-2 {
+    padding: 10px;
+  }
+  .about-me {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .avatar {
+    border-radius: 15px;
+    margin-left: 0px;
+  }
+}
+
+/* Section 3 */
+
 .section-3 {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #2B7A77;
   overflow: hidden;
 }
 
 .section-4 {
-  background-color: #3AAFA9;
-}
-
-.section-5 {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.section-6 {
+.section-5 {
   background-color: #17242A;
+}
+
+.section-6 {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /*  */
@@ -178,6 +261,7 @@ section {
 /* Section 1 Text */
 
 /*  */
+
 .centered-content {
   /* background: rgba(0, 0, 0, 0); */
   /* Center the text container */
@@ -209,7 +293,6 @@ section {
   /* This makes the cutout text possible */
   line-height: 8vw;
   backdrop-filter: blur(30px);
-
 }
 
 .section-1 h3 {
@@ -236,6 +319,19 @@ section {
   }
 }
 
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: rgb(204, 214, 246);
+}
+
+a:hover {
+  color: rgb(204, 214, 246);
+}
 
 .color-reference {
   color: #17242A;
@@ -250,6 +346,3 @@ section {
     display: none !important;
   }
 }
-
-
-

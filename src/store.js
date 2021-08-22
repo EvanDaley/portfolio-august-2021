@@ -2,14 +2,12 @@ import create from 'zustand'
 
 const useStore = create(set => ({
   videoPaths: [
-    window.location.href + '/video/blue_hex.mp4',
-    window.location.href + '/video/hex_hdri2.mp4',
-    window.location.href + '/video/hex_hdri.mp4',
-    // window.location.href + '/video/composite/abstract4.mp4',
+    '/video/blue_hex.mp4',
+    '/video/hex_hdri2.mp4',
+    '/video/hex_hdri.mp4',
   ],
   videoIndex: 0,
   switchVideos: () => set(state => ({ 
-    // videoIndex: ((state.videoIndex + 1)) 
     videoIndex: ((state.videoIndex + 1) % (state.videoPaths.length)) 
   })),
 

@@ -1,5 +1,5 @@
 export default function Section() {
-  const logoPath = window.location.href + '/images/logo.png'
+  const logoPath = document.location.origin + window.location.pathname + '/images/logo.png'
 
   return (
     <div className="header">
@@ -14,7 +14,7 @@ export default function Section() {
         <div className="nav-menu">
           <ol className="menu-ordered-list">
             <li>
-              About
+              <a href="#about-me-section">About Me</a>
             </li>
             <li>
               Experience
