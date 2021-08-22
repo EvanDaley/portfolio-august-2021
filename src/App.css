@@ -194,7 +194,7 @@ section {
 }
 
 .section-1 h2 {
-  background-color: rgba(4, 9, 12, 0.05);
+  background-color: rgba(4, 9, 12, 0.2);
   color: white;
   font-size: 5vw;
   text-transform: uppercase;
@@ -207,12 +207,12 @@ section {
   text-align: center;
   /* This makes the cutout text possible */
   line-height: 8vw;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
 
 }
 
 .section-1 h3 {
-  background-color: rgba(58, 175, 169, .7);
+  background-color: rgba(58, 175, 169, .5);
   color: white;
   font-size: 2vw;
   text-transform: uppercase;
@@ -226,10 +226,17 @@ section {
   text-align: center;
   /* This makes the cutout text possible */
   line-height: 2.2vw;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(100px);
 }
 
-.test {
+@media (max-width:650px) {
+  .section-1 h3 {
+    line-height: .2vw;
+  }
+}
+
+
+.color-reference {
   color: #17242A;
   color: #2B7A77;
   color: #3AAFA9;
@@ -237,5 +244,9 @@ section {
   color: #FFFFFF;
 }
 
-
+@media (max-width:650px) {
+  .media-query-reference {
+    display: none !important;
+  }
+}
 
