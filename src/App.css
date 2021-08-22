@@ -185,7 +185,7 @@ section {
   /* Center text */
   position: absolute;
   /* Position text */
-  top: 50vh;
+  top: 45vh;
   /* Position text in the middle */
   left: 50vw;
   /* Position text in the middle */
@@ -218,7 +218,7 @@ section {
   text-transform: uppercase;
   font-weight: normal;
   margin: 0 auto;
-  margin-right: 1vw;
+  margin-right: 1.5vw;
   margin-top: -1vw;
   /* Center the text container */
   padding: 10px;
