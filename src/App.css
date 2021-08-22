@@ -135,7 +135,7 @@ ol li:before {
 /*  */
 
 section {
-  height: 95vh;
+  height: 80vh;
   padding: 0px;
   margin: 0px;
 }
@@ -249,4 +249,6 @@ section {
     display: none !important;
   }
 }
+
+
 

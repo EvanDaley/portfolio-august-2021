@@ -3,6 +3,7 @@
 // so don't try to do anything fancy with Three.js.
 
 import VideoSandbox from "./VideoSandbox"
+import Section1 from "./Section1"
 
 function Layout() {
   const logoPath = window.location.href + '/images/logo.png'
@@ -49,12 +50,7 @@ function Layout() {
 
         <div id="content">
           <main className="content-container">
-            <section className="section-1">
-              <div className="centered-content">
-                <h2>Evan Daley</h2>
-                <h3>Full-Stack Engineer</h3>
-              </div>
-            </section>
+            <Section1/>
 
             <section className="section-2">
               <div>
