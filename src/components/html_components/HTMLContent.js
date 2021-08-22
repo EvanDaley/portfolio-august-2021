@@ -47,18 +47,12 @@ function Layout() {
           </nav>
         </div>
 
-        <div className="no-bg">
-          <div className="section-1">
-            {/* <h3>Full Stack Software Developer</h3> */}
-            <h2>Evan Daley</h2>
-          </div>
-        </div>
-
         <div id="content">
           <main className="content-container">
             <section className="section-1">
-              <div>
-                <p>test</p>
+              <div className="centered-content">
+                <h2>Evan Daley</h2>
+                <h3>Full-Stack Engineer</h3>
               </div>
             </section>
 

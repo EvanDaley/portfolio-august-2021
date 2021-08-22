@@ -118,3 +118,57 @@ ol li:before {
   transform: translate(-50%, -50%); /* Position text in the middle */
   mix-blend-mode: screen; /* This makes the cutout text possible */
 }
+
+
+.section-1 h2 {
+  background-color: rgba(23, 36, 42, .8);
+  color: white;
+  font-size: 8vw;
+  text-transform: uppercase;
+  /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto;
+  /* Center the text container */
+  padding: 10px;
+  width: 60%;
+  text-align: center;
+  /* Center text */
+  position: absolute;
+  /* Position text */
+  top: 50vh;
+  /* Position text in the middle */
+  left: 50vw;
+  /* Position text in the middle */
+  transform: translate(-50%, -50%);
+  /* Position text in the middle */
+  mix-blend-mode: screen;
+  /* This makes the cutout text possible */
+  line-height: 8vw;
+  backdrop-filter: blur(10px);
+}
+
+.section-1 h3 {
+  background-color: rgba(2, 2, 2, .8);
+  color: white;
+  font-size: 2vw;
+  text-transform: uppercase;
+  /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto;
+  /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  /* Center text */
+  position: absolute;
+  /* Position text */
+  top: 65%;
+  /* Position text in the middle */
+  left: 50%;
+  /* Position text in the middle */
+  transform: translate(-40%, -50%);
+  /* Position text in the middle */
+  mix-blend-mode: screen;
+  /* This makes the cutout text possible */
+  line-height: 4vw;
+}
