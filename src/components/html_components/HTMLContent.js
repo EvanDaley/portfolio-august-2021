@@ -4,77 +4,30 @@
 
 import VideoSandbox from "./VideoSandbox"
 import Section1 from "./Section1"
+import Section2 from "./Section2"
+import Section3 from "./Section3"
+import Section4 from "./Section4"
+import Section5 from "./Section5"
+import Header from "./Header"
 
 function Layout() {
-  const logoPath = window.location.href + '/images/logo.png'
 
   return (
     <>
       <div className="html-content-container">
 
-        {/* <VideoSandbox /> */}
+        <VideoSandbox />
 
-        <div className="header">
-          <nav className="navbar">
-
-            <div className="logo">
-              <a href="https://evandaley.github.io/portfolio-august-2021/">
-                <img src={logoPath} className="logo" alt="Logo" />
-              </a>
-            </div>
-
-            <div className="nav-menu">
-              <ol className="menu-ordered-list">
-                <li>
-                  About
-                </li>
-                <li>
-                  Experience
-                </li>
-                <li>
-                  Frontend
-                </li>
-                <li>
-                  Backend
-                </li>
-                <li>
-                  Featured Projects
-                </li>
-                <li>
-                  Get in Touch
-                </li>
-              </ol>
-            </div>
-          </nav>
-        </div>
+        <Header/>
 
         <div id="content">
           <main className="content-container">
             <Section1/>
+            <Section2/>
+            <Section3/>
+            <Section4/>
+            <Section5/>
 
-            <section className="section-2">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-
-            <section className="section-3">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-
-            <section className="section-4">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
-
-            <section className="section-5">
-              <div>
-                <p>test</p>
-              </div>
-            </section>
           </main>
         </div>
 

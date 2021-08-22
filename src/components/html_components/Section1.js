@@ -6,7 +6,7 @@ const TITLES = [
   'Full-Stack Engineer',
   '3D Enthusiast',
   'Forest Walker',
-  'Fried Potato Lover',
+  'Potato Lover',
   'Software Architect',
 ];
 

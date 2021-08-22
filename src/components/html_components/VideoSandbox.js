@@ -1,7 +1,5 @@
 
 import useStore from '../../store'
-import ReactPlayer from 'react-player'
-import { useEffect } from 'react'
 
 export default function Navigation() {
   const videoIndex = useStore(state => state.videoIndex)
