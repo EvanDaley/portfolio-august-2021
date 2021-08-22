@@ -19,7 +19,9 @@ export default function Section() {
             startDelay={1}
             multiText={[
               'Full-Stack Engineer',
+              'Scalable Potato',
               '3D Enthusiast',
+              'Tech Lead',
               'Software Architect',
             ]}
             typeSpeed={40}
