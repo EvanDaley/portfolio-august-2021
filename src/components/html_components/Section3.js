@@ -5,7 +5,7 @@ const imgPath = document.location.origin + window.location.pathname + '/images/R
 export default function Section() {
   return (
     <section className="section-3">
-      {/* <img src={imgPath} alt="red hex" style={{width: '100%'}}/> */}
+      <img src={imgPath} alt="red hex" style={{width: '100%'}}/>
     </section>
   )
 }

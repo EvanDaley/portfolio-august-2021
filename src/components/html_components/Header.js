@@ -17,9 +17,9 @@ export default function Section() {
               <a href="#about-me-section">About Me</a>
             </li>
             <li>
-              Experience
+              <a href="#employment-section">Experience</a>
             </li>
-            <li>
+            {/* <li>
               Frontend
             </li>
             <li>
@@ -27,9 +27,9 @@ export default function Section() {
             </li>
             <li>
               Featured Projects
-            </li>
+            </li> */}
             <li>
-              Get in Touch
+            <a href="#contact-me">Get in Touch</a>
             </li>
           </ol>
         </div>

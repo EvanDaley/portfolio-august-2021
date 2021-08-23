@@ -5,9 +5,9 @@
 import VideoSandbox from "./VideoSandbox"
 import Section1 from "./Section1"
 import AboutMe from "./AboutMe"
-import Section3 from "./Section3"
+import Employment from "./Employment"
 import Section4 from "./Section4"
-import Section5 from "./Section5"
+import ContactMe from "./ContactMe"
 import Header from "./Header"
 
 function Layout() {
@@ -24,9 +24,9 @@ function Layout() {
           <main className="content-container">
             <Section1/>
             <AboutMe/>
-            <Section3/>
-            <Section4/>
-            <Section5/>
+            <Employment/>
+            {/* <Section4/> */}
+            <ContactMe/>
 
           </main>
         </div>
