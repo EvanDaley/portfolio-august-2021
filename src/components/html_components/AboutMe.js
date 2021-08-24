@@ -11,11 +11,11 @@ function Bio() {
         <br />
         <br />
         Recently, I've had the privilege of working for a few really cool tech companies in the Pacific Northwest.
-        At <a href="https://www.kaspien.com/software/" target="_blank" className="highlight underline">Kaspien</a> I helped build software that has driven over
+        At <a href="https://www.kaspien.com/software/" rel="noreferrer" target="_blank" className="highlight underline">Kaspien</a> I helped build software that has driven over
         <span className="highlight" style={{ margin: '0px' }}>
           &nbsp;1B&nbsp;
         </span>in sales.
-        At <a href="https://www.twobarrels.com/" target="_blank" className="highlight underline">Two Barrels</a> I work on a SAAS product that has empowered over
+        At <a href="https://www.twobarrels.com/" rel="noreferrer" target="_blank" className="highlight underline">Two Barrels</a> I work on a SAAS product that has empowered over
         <span className="highlight">&nbsp;1M</span>&nbsp;customers to form companies in the US.&nbsp;
         {/* During weekends at <a href="https://www.nucamp.co/" target="_blank" className="highlight underline">Nucamp</a>&nbsp; */}
         {/* I've also done a bunch of freelance work and led over 60 workshops with Nucamp, on the basics and best practices of MERN software development. */}
@@ -35,7 +35,7 @@ function Avatar() {
   const imgPath = document.location.origin + window.location.pathname + '/images/profile.png'
 
   return (
-    <img src={imgPath} className="avatar" />
+    <img alt="avatar" src={imgPath} className="avatar" />
   )
 }
 

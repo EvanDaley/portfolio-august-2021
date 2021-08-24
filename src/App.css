@@ -2,6 +2,27 @@
   box-sizing: border-box;
 }
 
+/* CSS Variables. I'm not in love with this approach :/ */
+:root {
+  --main-bg-color: #0B2340;
+}
+
+/* reference */
+
+.color-reference {
+  color: #17242A;
+  color: #2B7A77;
+  color: #3AAFA9;
+  color: #DEF2F1;
+  color: #FFFFFF;
+}
+
+@media (max-width:650px) {
+  .media-query-reference {
+    display: none !important;
+  }
+}
+
 html, body, #root {
   width: 100%;
   height: 100%;
@@ -96,6 +117,11 @@ ol li:before {
 .content-container {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+/* This is useful for double checking layouts */
+.black-background {
+  background-color: black;
 }
 
 .highlight {
@@ -222,10 +248,6 @@ section {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.no-bg>* {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .section-1>p {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -233,7 +255,7 @@ section {
 /* Section 2, about me, avatar */
 
 .section-2 {
-  background-color: #17242A;
+  background-color: var(--main-bg-color);
   margin: 0px auto;
   display: flex;
   width: 100%;
@@ -266,14 +288,8 @@ section {
 
 /* Section 3 */
 
-/* .section-3 {
-  background-color: #22615f;
-  overflow: hidden;
-  height: auto;
-} */
-
 .section-3 {
-  background-color: #22615f;
+  background-color: var(--main-bg-color);
   margin: 0px auto;
   display: flex;
   width: 100%;
@@ -284,11 +300,11 @@ section {
 }
 
 .section-4 {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--main-bg-color);
 }
 
 .section-5 {
-  background-color: #17242A;
+  background-color: var(--main-bg-color);
   color: #C3DCDB;
 
   margin: 0px auto;
@@ -350,14 +366,11 @@ section {
   color: white;
   font-size: 5vw;
   text-transform: uppercase;
-  /* Responsive font size */
   font-weight: bold;
   margin: 0 auto;
-  /* Center the text container */
   padding-bottom: 0px;
   width: 100%;
   text-align: center;
-  /* This makes the cutout text possible */
   line-height: 8vw;
   backdrop-filter: blur(30px);
 }
@@ -371,11 +384,9 @@ section {
   margin: 0 auto;
   margin-right: 1.5vw;
   margin-top: -1vw;
-  /* Center the text container */
   padding: 10px;
   width: 65%;
   text-align: center;
-  /* This makes the cutout text possible */
   line-height: 2.2vw;
   backdrop-filter: blur(100px);
 }
@@ -400,16 +411,25 @@ a:hover {
   color: rgb(204, 214, 246);
 }
 
-.color-reference {
-  color: #17242A;
-  color: #2B7A77;
-  color: #3AAFA9;
-  color: #DEF2F1;
-  color: #FFFFFF;
+
+/* rest sections */
+.rest-section {
+  height: auto;
+  background-color: #0B2340;
 }
 
-@media (max-width:650px) {
-  .media-query-reference {
-    display: none !important;
-  }
+.rest-video {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.rest-section-inner-container {
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }

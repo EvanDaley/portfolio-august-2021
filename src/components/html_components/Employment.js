@@ -6,21 +6,23 @@ function SpecificJob({ title, company, duration, workItems, link }) {
     <div className="job">
       <p className="job-title">
         <span>{title}</span>
-        <span class="highlight">&nbsp;@&nbsp;
-          <a href={link} class="highlightI underline" rel="noopener noreferrer" target="_blank">
+        <span className="highlight">&nbsp;@&nbsp;
+          <a href={link} className="highlightI underline" rel="noopener noreferrer" target="_blank">
             {company}
           </a>
         </span>
       </p>
-      <p class="range">{duration}</p>
+      <p className="range">{duration}</p>
       <div>
         <ul className="task-summary">
           {workItems.map(
-            item => (<li>{item}</li>)
+            item => (
+              <li key={item}>{item}</li>
+            )
           )}
         </ul>
       </div>
-      <br/>
+      <br />
     </div>
   )
 }
