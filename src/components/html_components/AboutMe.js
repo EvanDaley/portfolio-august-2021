@@ -42,7 +42,7 @@ function Avatar() {
 export default function Section() {
   return (
     <section id="about-me-section" className="section-2">
-      <div className="about-me">
+      <div className="content-section">
         <SectionHeading  prefix="01"  label="About Me"/>
 
         <div className="font-twenty flex-container">

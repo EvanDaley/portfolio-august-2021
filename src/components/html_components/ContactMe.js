@@ -3,8 +3,8 @@ import SectionHeading from "./SectionHeading"
 
 export default function Section() {
   return (
-    <section id="contact-me" className="section-5">
-      <div className="contact-me">
+    <section id="contact-me" className="section-2">
+      <div className="content-section">
         <SectionHeading prefix="03" label="What’s Next?" />
         <p className="font-twenty">
           Although I'm not actively looking for any new opportunities, my inbox is always open.

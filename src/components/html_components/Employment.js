@@ -72,13 +72,10 @@ function Experience() {
 export default function Section() {
   return (
     <section id="employment-section" className="section-3">
-      <div className="about-me">
+      <div className="content-section">
         <SectionHeading prefix="02" label="Where I've Worked" />
 
         <div className="font-twenty flex-container">
-          {/* <h1 className="highlight">
-            This section is a WIP. I should probably just copy my work experience over from LinkedIn. In the meantime, here's a cool animation.<br />
-          </h1> */}
           <Experience />
         </div>
       </div>

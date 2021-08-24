@@ -156,6 +156,7 @@ ol li:before {
   margin: 10px 0px 40px;
   width: 100%;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .section-label::after {
@@ -242,7 +243,7 @@ section {
   min-height: 50vh;
 }
 
-.about-me {
+.content-section {
   margin: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -265,10 +266,21 @@ section {
 
 /* Section 3 */
 
-.section-3 {
+/* .section-3 {
   background-color: #22615f;
   overflow: hidden;
   height: auto;
+} */
+
+.section-3 {
+  background-color: #22615f;
+  margin: 0px auto;
+  display: flex;
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: auto;
+  min-height: 50vh;
 }
 
 .section-4 {
@@ -288,28 +300,15 @@ section {
   min-height: 50vh;
 }
 
-.contact-me {
-  margin: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  max-width: 1000px;
-}
-
 .section-6 {
   background-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width:1200px) {
-  .section-2, .section-5 {
+  .section-2, .section-3, .section-5 {
     padding: 10px;
   }
-  .about-me {
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-  }
-  .contact-me {
+  .content-section {
     margin: 10px;
     padding: 10px;
     width: 100%;
