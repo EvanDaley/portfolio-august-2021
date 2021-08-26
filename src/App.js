@@ -7,6 +7,7 @@ import Rest1 from "./components/html_components/Rest1"
 import Rest2 from "./components/html_components/Rest2"
 import ContactMe from "./components/html_components/ContactMe"
 import Header from "./components/html_components/Header"
+import EmptySection from "./components/html_components/EmptySection"
 
 function App() {
   return (
@@ -18,10 +19,11 @@ function App() {
           <main className="content-container">
             <Section1 />
             <AboutMe />
-            <Rest1 />
             <Employment />
-            <Rest2 />
+            {/* <Rest2 /> */}
             <ContactMe />
+            {/* <Rest1 /> */}
+            <EmptySection />
           </main>
         </div>
       </div>

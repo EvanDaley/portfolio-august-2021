@@ -137,7 +137,8 @@ ol li:before {
 }
 
 .job-title {
-  color: #f2f2f2;
+  /* color: #f2f2f2; */
+  color: #CCD6F6;
   font-weight: 500;
   font-size: 22px;
   margin-top: 0px;
@@ -151,8 +152,10 @@ ol li:before {
 }
 
 .task-summary li {
-  font-size: 18px;
-  color: #cce3e2;
+  font-size: 19px;
+  color: rgb(136, 146, 176);
+  /* color: #cce3e2; */
+  /* color: #6E7B99; */
   margin: 0;
   padding: 0;
 }
@@ -166,7 +169,8 @@ ol li:before {
 .range {
   /* color: #cccccc; */
   /* color: #42c9c3; */
-  color: #DEF2F1;
+  /* color: #DEF2F1; */
+  color: #CCD6F6;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 13px;
@@ -262,7 +266,7 @@ section {
   padding-left: 150px;
   padding-right: 150px;
   height: auto;
-  min-height: 50vh;
+  /* min-height: 50vh; */
 }
 
 .content-section {
@@ -346,19 +350,12 @@ section {
 /*  */
 
 .centered-content {
-  /* background: rgba(0, 0, 0, 0); */
-  /* Center the text container */
   width: 40%;
   text-align: center;
-  /* Center text */
   position: absolute;
-  /* Position text */
   top: 45vh;
-  /* Position text in the middle */
   left: 50vw;
-  /* Position text in the middle */
   transform: translate(-50%, -50%);
-  /* Position text in the middle */
 }
 
 .section-1 h2 {
