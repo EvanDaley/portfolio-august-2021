@@ -15,13 +15,13 @@ function Bio() {
         <span className="highlight" style={{ margin: '0px' }}>
           &nbsp;1B&nbsp;
         </span>in sales.
-        At <a href="https://www.twobarrels.com/" rel="noreferrer" target="_blank" className="highlight underline">Two Barrels</a> I work on a SAAS product that has empowered over
+        At <a href="https://www.twobarrels.com/" rel="noreferrer" target="_blank" className="highlight underline">Two Barrels</a> I work on a SaaS product that has empowered over
         <span className="highlight">&nbsp;1M</span>&nbsp;customers to form companies in the US.&nbsp;
         {/* During weekends at <a href="https://www.nucamp.co/" target="_blank" className="highlight underline">Nucamp</a>&nbsp; */}
         {/* I've also done a bunch of freelance work and led over 60 workshops with Nucamp, on the basics and best practices of MERN software development. */}
         <br />
         <br />
-        My main focus these days is fullstack software development, primarly for SAAS-driven businesses.
+        My main focus these days is fullstack software development, primarly for SaaS-driven businesses.
         {/* I love building digital experiences, working with big data, and solving complex challenges. */}
 
         {/* &nbsp;Some of my favorite tools are React, Rails, Vue, AWS, docker, and anything SQL -
