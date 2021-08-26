@@ -149,11 +149,15 @@ ol li:before {
   padding-left: 0px;
   margin-top: 10px;
   list-style-type: none;
+  color: rgb(168, 178, 209);
+
 }
 
 .task-summary li {
   font-size: 19px;
-  color: rgb(136, 146, 176);
+  /* color: rgb(136, 146, 176); */
+  color: rgb(168, 178, 209);
+
   /* color: #cce3e2; */
   /* color: #6E7B99; */
   margin: 0;
@@ -266,11 +270,13 @@ section {
   padding-left: 150px;
   padding-right: 150px;
   height: auto;
+  color: rgb(168, 178, 209);
   /* min-height: 50vh; */
 }
 
 .content-section {
   margin: 50px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -309,7 +315,7 @@ section {
 
 .section-5 {
   background-color: var(--main-bg-color);
-  color: #C3DCDB;
+  color: rgb(168, 178, 209);
 
   margin: 0px auto;
   display: flex;

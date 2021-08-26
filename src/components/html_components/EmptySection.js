@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading"
 export default function Section() {
   return (
     <section id="contact-me" className="section-2">
-      <div className="content-section">
+      <div style={{height: '300px'}}>
       </div>
     </section>
   )

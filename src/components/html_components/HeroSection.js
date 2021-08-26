@@ -10,6 +10,31 @@ const TITLES = [
   'Software Architect',
 ];
 
+function TextTransitionSubheading() {
+
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(() =>
+      setIndex(index => index + 1),
+      1200
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
+  return (
+    <TextTransition
+      // inline={true}
+      style={{
+        // marginLeft: '15px'
+      }}
+      direction="up"
+      text={TITLES[index % TITLES.length]}
+      springConfig={presets.wobbly}
+    />
+  );
+}
+
 function TypeWriterSubheading() {
   return (
     <TypeWriterEffect
@@ -28,31 +53,6 @@ function TypeWriterSubheading() {
       blink={true}
     />
   )
-}
-
-function TextTransitionSubheading() {
-
-  const [index, setIndex] = React.useState(0);
-
-  React.useEffect(() => {
-    const intervalId = setInterval(() =>
-      setIndex(index => index + 1),
-      1600
-    );
-    return () => clearTimeout(intervalId);
-  }, []);
-
-  return (
-    <TextTransition
-      // inline={true}
-      style={{
-        // marginLeft: '15px'
-      }}
-      direction="up"
-      text={TITLES[index % TITLES.length]}
-      springConfig={presets.wobbly}
-    />
-  );
 }
 
 export default function Section() {
