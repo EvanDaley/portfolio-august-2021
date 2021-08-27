@@ -1,4 +1,4 @@
-# portfolio-aguust-2021
+# portfolio-aguut-2021
 
 ## Live Demo
 https://evandaley.github.io/portfolio-august-2021/
